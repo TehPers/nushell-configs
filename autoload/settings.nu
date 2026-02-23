@@ -12,5 +12,5 @@ $env.GIT_EDITOR = "code -w"
 $env.VIRTUAL_ENV_DISABLE_PROMPT = true # starship shows current venv already
 
 # Enable autoenv
-use dotenv.nu
+use dotenv.nu *
 dotenv autoenv enable -r
