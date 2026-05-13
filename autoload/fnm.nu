@@ -9,7 +9,7 @@ if (which fnm | is-not-empty) {
     } else {
         $env.FNM_MULTISHELL_PATH | path join "bin"
     }
-    $env.PATH ++= [$multishell_path]
+    $env.PATH = $env.PATH | prepend $multishell_path
 
     # Update npm version on cd if needed
     $env.config.hooks = $env.config.hooks
